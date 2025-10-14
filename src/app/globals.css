@@ -1,0 +1,62 @@
+:root {
+    --figmaGreen:#245D30
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.wrapper {
+    width: 92% !important;
+    height: fit-content !important;
+    margin: auto !important;
+}
+.page1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/picnicBackgroung.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 180px;
+    padding-left: 80px;
+   
+}
+.text1 {
+     font-size: 50px;
+     color: white;
+     font-weight: 800;
+     
+}
+.text2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.hamburger {
+    display: none !important;
+    
+}
+.searchInp {
+    display: none !important;
+}
+@media screen and (max-width: 660px) {
+  .hamburger {
+    display: inline-block !important;
+  }
+  .navbarList {
+    display: none !important;
+  
+  }
+  .navbarList a {
+    display: none !important;
+   
+  }
+  .navbarInput {
+    display: none !important;
+  }
+  .searchInp {
+    display: inline-block !important;
+  }
+  .inp2 {
+    margin-bottom: 20px;
+  }
+}

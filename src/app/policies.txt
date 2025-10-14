@@ -1,0 +1,30 @@
+
+
+-- Allow SELECT for anon + authenticated
+create policy "Allow all selects"
+on "Users"
+for select
+to anon, authenticated
+using (true);
+
+-- Allow INSERT for anon + authenticated
+create policy "Allow all inserts"
+on "Users"
+for insert
+to anon, authenticated
+with check (true);
+
+-- Allow UPDATE for anon + authenticated
+create policy "Allow all updates"
+on "Users"
+for update
+to anon, authenticated
+using (true)
+with check (true);
+
+-- Allow DELETE for anon + authenticated
+create policy "Allow all deletes"
+on "Users"
+for delete
+to anon, authenticated
+using (true);
