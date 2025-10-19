@@ -1,10 +1,29 @@
 :root {
     --figmaGreen:#245D30
 }
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+}
+.bold-green-button {
+  background-color: var(--figmaGreen) ;
+}
+.abc {
+  font-weight:700;
+}
+.hero {
+  margin-top:50px;
+  height:463px;
+ 
+}
+.bold-green {
+  color: var(--figmaGreen);
 }
 .wrapper {
     width: 92% !important;
